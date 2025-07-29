@@ -76,7 +76,7 @@ public class exo2_MMAUc {
         if (valeurSaisie = 0 || valeurSaisie = 1) {
             System.out.println("La factorielle de " + valeurSaisie + "est : " + resultat);
         } else {
-            for (compteur > 1, compteur = valeurSaisie, compteur++)  {
+            for (compteur> 1, compteur = valeurSaisie, compteur++;)  {
                 resultat = resultat * compteur;
                 compteur = compteur - 1;
             }

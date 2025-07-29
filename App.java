@@ -1,3 +1,5 @@
+import training.afpa.CDA24060.exo3_MMAU;
+
 public class App {
 
     public static void main (String[] args) {
@@ -14,4 +16,7 @@ public class App {
 
         System.out.println ("Démarrage du programme");
     }
+
+    exo3_MMAU exo3_MMAU = new  exo3_MMAU();
+        exo3_MMAU.equation();
 }
