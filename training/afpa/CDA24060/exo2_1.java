@@ -3,6 +3,8 @@ package training.afpa.CDA24060;
 
 import java.util.Scanner;
 
+import static java.lang.System.in;
+
 public class calculPrixTTC {
 
 
@@ -10,12 +12,12 @@ public class calculPrixTTC {
 
     public void calculPrixTTC () {
 
-        float prixHT;
-        float prixTTC;
+        double prixHT;
+        double prixTTC;
 
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Veuillez saisir le prix de l'objet");
-        prixHT = in.nextFloat();
+        Scanner sc = new Scanner(in);
+        System.out.println("Veuillez saisir le prix de l'objet hors taxe. ");
+        prixHT = in.nextDouble();
 
         prixTTC = (prixHT * 1.196);
         System.out.println("Voici le prix HT : " + prixHT);

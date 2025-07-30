@@ -3,55 +3,60 @@ package training.afpa.CDA24060;
 //recherche dichotomique : vérifier la présence ou l'absence d'un entier dans un tableau trié
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class exo5_MMAU {
 
-    public class rechercheDicho () {
+    public class rechercheValeur () {
 
-        int indiceBas;
+        int[] tabEntier;  // comment creer un tableau de x entiers et comment le déclarer ?
+        int indiceBas ;
         int indiceHaut;
         int indiceMilieu;
         int resultat;
-        boolean trouve;
+        boolean trouve;  // à quel endroit declaration de valeur x a rechercher ?
 
-        /**
-         * faire la fonction recherche
-         * /initialiser les valeurs des variables
-         * /
-         */
-        int[] tableauEntier = [int x];  // comment creer un tableau de x entiers et comment le déclarer ?
-        int indiceBas = 0;
-        int indiceHaut = tableauEntier.length - 1;
-        int indiceMilieu = (indiceBas + indiceHaut) / 2;
-        boolean trouve = false;
 
-        while (trouve = false & indiceBas <  indiceHaut)  {
+        /* Création de la fonction recherche dichotomique*/
 
-            if (y < tableauEntier[indiceMilieu]) {
+        public void rechercheDicho () {
+
+            int tabEntier = new tabEntier [10];  // redondance, doit on affecter forcément des la déclaration ?
+            int indiceBas = 1;
+            int indiceHaut = tabEntier.lenght - 1;
+            int indiceMilieu = (indiceBas + indiceHaut) / 2;
+            int y;
+            boolean trouve = false;
+
+
+            while (trouve = false & indiceBas <  indiceHaut)  {
+
+                if (y < tabEntier[indiceMilieu]) {
                 indiceHaut = indiceMilieu - 1;
-            } else {
-                if (y > tableauEntier[indiceMilieu]) {
-                    indiceBas = indiceMilieu + 1;
                 } else {
-                    trouve = true;
+                    if (y > tabEntier[indiceMilieu]) {
+                    indiceBas = indiceMilieu + 1;
+                    } else {
+                        trouve = true;
+                    }
+                    indiceMilieu = (indiceBas + indiceHaut) / 2;
                 }
-                indiceMilieu = (indiceBas + indiceHaut) / 2;
-            }
-            if (trouve = true) {
-                return resultat = indiceMilieu;
-            } else {
-                return resultat = -1;
+                if (trouve = true) {
+                    return resultat = indiceMilieu;
+                } else {
+                    return resultat = -1;
+                }
             }
         }
-    }
-    int[] index = { 2, 5, 5, 8, 9, 10, 11, 11, 15, 16 };
-    int x;
-    int resultat;
+        int[] index = { -2,-1,0,13,24,37,44,56,99,117 };
+
+        Scanner in = new Scanner (System.in);
+        System.out.println("Veuillez saisir la valeur de x : ");
+        int x = nextInt();
 
 
-    System.out.println(Arrays.toString(index));
 
-    System.out.println("");
+
 
 
 

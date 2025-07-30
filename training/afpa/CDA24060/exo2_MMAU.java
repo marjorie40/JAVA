@@ -15,7 +15,7 @@ public class exo2_MMAU {
         System.out.println("Veuillez saisir votre valeur. ");
         valeurSaisie = in.nextInt(); // ça signifie quoi ??
 
-        if (valeurSaisie = 0 || valeurSaisie = 1) {  // quel code, terminologie pour -OU-
+        if (valeurSaisie == 0 || valeurSaisie == 1) {  // quel code, terminologie pour -OU-
             System.out.println("La factorielle de " + valeurSaisie + "est : " + resultat);
         } else {
             while (compteur > 1) {
@@ -43,7 +43,7 @@ public class exo2_MMAUb {
 
         compteur = valeurSaisie;
 
-        if (valeurSaisie = 0 || valeurSaisie = 1) {
+        if (valeurSaisie == 0 || valeurSaisie == 1) {
             System.out.println("La factorielle de " + valeurSaisie + "est : " + resultat);
         } else {
             do {
@@ -73,10 +73,10 @@ public class exo2_MMAUc {
 
         compteur = valeurSaisie;
 
-        if (valeurSaisie = 0 || valeurSaisie = 1) {
+        if (valeurSaisie == 0 || valeurSaisie == 1) {
             System.out.println("La factorielle de " + valeurSaisie + "est : " + resultat);
         } else {
-            for (compteur> 1, compteur = valeurSaisie, compteur++;)  {
+            for (compteur > 1; compteur == valeurSaisie; compteur ++) {
                 resultat = resultat * compteur;
                 compteur = compteur - 1;
             }
