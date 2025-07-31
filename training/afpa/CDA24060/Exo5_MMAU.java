@@ -2,6 +2,8 @@ package training.afpa.CDA24060;
 
 //recherche dichotomique : vérifier la présence ou l'absence d'un entier dans un tableau trié
 
+/* !!!! NON TERMINE !!!! */
+
 import java.util.Scanner;
 
 public class Exo5_MMAU {

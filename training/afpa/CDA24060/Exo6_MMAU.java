@@ -1,34 +1,57 @@
 package training.afpa.CDA24060;
 
+import java.util.Scanner;
+
 public class Exo6_MMAU {
 
     /* Créer une matrice tableau 2 lignes (indice, factorielle) */
 
-    int tabEnt[] = new int[10];  // est ce OK de combiner déclaration, et activation du tableau + déclaration de la taille
+    int tabEnt[] = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10};  // est-ce OK de combiner : déclaration, activation du tableau + déclaration de la taille
+    int tabEnt2[] = new int[2];
+    int valeurSaisie;
+    int resultat;
+    int i; // indice des tableaux
 
-    public int tab_factorielle () {
+    public int tab_factorielle() {
 
-        /* Fonction calcul de la factorielle*/
-        int resultat = 1;
+        if (i == 0) {
 
-        for (i=1 ;i< tabEnt.length-1 ;i++) {
+            tabEnt[i] = 1;
+            tabEnt2[i] = 1;
+        } else {
+            if ( i >= 1; i < tabEnt.length - 1; i++) {
+
+                resultat = tabEnt[i] * tabEnt2[i - 1];
+            }
+        }
+        /* Fonction calcul de la factorielle
+        resultat = 1;
+
+        for (i = 1 ;i< tabEnt.length-1 ;i++) {
             resultat = resultat * i;
         }
         return resultat;
+    } */
+            // Saisie du nombre par l'utilisateur
+
+            Scanner in = new Scanner(System.in);
+            System.out.println("Veuillez saisir une nombre, entre 1 et 10, pour calculer sa factorielle. ");
+            valeurSaisie = in.nextInt();
+
+            if (valeurSaisie <= 1 || valeurSaisie >= 10) {
+                System.out.println("ERREUR de saisie !!! Veuillez, s'il vous plait, saisir une valeur entre 1 et 10 pour calculer sa factorielle. ");
+                valeurSaisie = in.nextInt();
+            }
+            i = (valeurSaisie - 1);
+
+            tab_factorielle();  // comment indiquer faire tab_factoriel de i ? N'accepte pas de valeur dans les ().
+            System.out.println("La factorielle de " + valeurSaisie + "est : " + resultat);
+        }
+        return int resultat;
     }
-
-    /* créer tableau matrice et déclaration des variables*/
-    int tabEnt2 [];
-
-    int tabEnt [] = new int[10];
-    int tabEnt2 [] = new int [2];
-    int i ;// indice tableau;
-    int TabRempli[];
-
-    int x; // valeur dans tableau
-
-    for (i =0 ; i < tabEnt.length-1 ; i++) {
-        int TabRempli [0][i] = i+1;
-    }
-
 }
+    /*for (i =1 ; i < tabEnt.length ; i++) {
+        int tabEnt [1][i] = calculFactoriel (i+1) ;
+    }
+    System.out.println("La factorielle de " + valeurSaisie + "est : " + resultat);
+*/

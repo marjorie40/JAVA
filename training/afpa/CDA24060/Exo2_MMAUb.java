@@ -23,8 +23,9 @@ public class Exo2_MMAU {
                 resultat = resultat * compteur;
                 compteur = compteur++;
             }
+            System.out.println("La factorielle de " + valeurSaisie + " avec Tant que est : " + resultat);
         }
-        System.out.println("La factorielle de " + valeurSaisie + " avec Tant que est : " + resultat);
+        return resultat;
     }
 }
 
@@ -32,6 +33,7 @@ public class Exo2_MMAU {
 // Factorielle d'un entier valeurSaisie avec répéter
 
 public class Exo2_MMAUb {
+
     public int factorielle () {
 
         int valeurSaisie;
@@ -54,6 +56,7 @@ public class Exo2_MMAUb {
                 while(compteur == 1);  // MEF il suggere un boolean quand seulement = 1 ou = 0 !!
             System.out.println ("La factorielle de " + valeurSaisie + " avec Répéter Jusqu'à est : " + resultat);  // placement du system out avant finSinon ou avant fin ?
         }
+        return resultat;
     }
 }
 
@@ -83,5 +86,6 @@ public class Exo2_MMAUc {
             }
             System.out.println ("La factorielle de " + valeurSaisie + " avec Pour est : " + resultat);
             }
+        return resultat;
         }
     }
