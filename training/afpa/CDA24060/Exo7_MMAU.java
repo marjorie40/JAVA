@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 import static java.lang.Math.random;
 
-public class exo7_MMAU {
+public class Exo7_MMAU {
 
     public class tab_top() {  // static, void , 0 , ...?? quel mot clé pour quelle signification ?
         int top;

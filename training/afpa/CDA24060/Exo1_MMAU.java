@@ -3,7 +3,7 @@ package training.afpa.CDA24060;
 import java.util.Scanner;
 
 // Somme d'entiers version Tant que
-public class exo1_MMAU {
+public class Exo1_MMAU {
 
     public void somme () {
 
@@ -28,7 +28,7 @@ public class exo1_MMAU {
 
 // Somme d'entiers version repeter jusqu'à
 
-public class exo1_MMAUb {
+public class Exo1_MMAUb {
     public void somme (); {  // pourquoi sugere-t-il static ? Il n'aime pas plusieurs -somme- dans la meme feuille ?
         int valeurSaisie;
         int compteur = 1;
@@ -50,7 +50,7 @@ public class exo1_MMAUb {
 
 // Somme d'entier version Pour
 
-public class exo1_MMAUc {
+public class Exo1_MMAUc {
     public void somme () {
         int valeurSaisie;
         int compteur;

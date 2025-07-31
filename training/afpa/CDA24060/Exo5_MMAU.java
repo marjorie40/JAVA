@@ -2,31 +2,28 @@ package training.afpa.CDA24060;
 
 //recherche dichotomique : vérifier la présence ou l'absence d'un entier dans un tableau trié
 
-import java.util.Arrays;
 import java.util.Scanner;
 
-public class exo5_MMAU {
-
-    public class rechercheValeur () {
-
-        int[] tabEntier;  // comment creer un tableau de x entiers et comment le déclarer ?
-        int indiceBas ;
-        int indiceHaut;
-        int indiceMilieu;
-        int resultat;
-        boolean trouve;  // à quel endroit declaration de valeur x a rechercher ?
+public class Exo5_MMAU {
 
 
-        /* Création de la fonction recherche dichotomique*/
+    int[] tabEntier =  ;
+    int indiceBas ;
+    int indiceHaut;
+    int indiceMilieu;
+    int resultat;
+    boolean trouve;  // à quel endroit declaration de valeur x a rechercher ?
 
-        public void rechercheDicho () {
 
-            int tabEntier = new tabEntier [10];  // redondance, doit on affecter forcément des la déclaration ?
-            int indiceBas = 1;
-            int indiceHaut = tabEntier.lenght - 1;
-            int indiceMilieu = (indiceBas + indiceHaut) / 2;
-            int y;
-            boolean trouve = false;
+    /* Création de la fonction recherche dichotomique*/
+    public boolean rechercheDicho () {
+
+        int tabEntier = new int [];  // redondance, doit on affecter forcément des la déclaration ?
+        int indiceBas = 1;
+        int indiceHaut = tabEntier.lenght - 1;
+        int indiceMilieu = (indiceBas + indiceHaut) / 2;
+        int y;
+        boolean trouve = false;
 
 
             while (trouve = false & indiceBas <  indiceHaut)  {
@@ -42,6 +39,7 @@ public class exo5_MMAU {
                     indiceMilieu = (indiceBas + indiceHaut) / 2;
                 }
                 if (trouve = true) {
+
                     return resultat = indiceMilieu;
                 } else {
                     return resultat = -1;

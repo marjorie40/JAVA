@@ -5,9 +5,9 @@ import java.util.Scanner;
 
 // remplir un tableau et calculer la moyenne
 
-public class exo8_MMAU {
+public class Exo8_MMAU {
 
-    public static void calculMoyenne (int tab) {  // pas de retour possible avec void : quoi choisir comme clé ?
+    public static void calculMoyenne () {  // pas de retour possible avec void : quoi choisir comme clé ?
 
         int somme;
         int moyenne;
@@ -39,7 +39,7 @@ public class exo8_MMAU {
         for (i=0 ; i<TAILLE; i++) {
             tab[i] = x;
         }
-        int moyenne = calculMoyenne(int tab);  // comment appeler methode. quel nom correct ?
+        int moyenne = calculMoyenne();  // comment appeler methode. quel nom correct ?
         System.out.println("La moyenne de ces " + valeurSaisie + " valeurs dans le tableau est de : " + moyenne);
     }
 }

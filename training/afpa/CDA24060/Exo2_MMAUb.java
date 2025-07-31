@@ -4,18 +4,19 @@ import java.util.Scanner;
 
 // Factorielle d'un entier valeurSaisie avec tant que
 
-public class exo2_MMAU {
-    public void factorielle () {
+public class Exo2_MMAU {
+
+    public int factorielle () {
 
         int valeurSaisie;
         int resultat = 1;
-        int compteur = 0; // demande d'initialisation de compteur de l'IDE
+        int compteur = 0;
 
-        Scanner in = new Scanner(System.in);
-        System.out.println("Veuillez saisir votre valeur. ");
-        valeurSaisie = in.nextInt(); // ça signifie quoi ??
+        Scanner in = new Scanner(System.in);  // scanner pour lire entrée
+        System.out.println("Veuillez saisir votre valeur. ");  // affichage pour recueillir
+        valeurSaisie = in.nextInt(); // affecte variable avec le in (indiquer le type attendu :Int; Float; Double)
 
-        if (valeurSaisie == 0 || valeurSaisie == 1) {  // quel code, terminologie pour -OU-
+        if (valeurSaisie == 0 || valeurSaisie == 1) {
             System.out.println("La factorielle de " + valeurSaisie + "est : " + resultat);
         } else {
             while (compteur > 1) {
@@ -23,15 +24,15 @@ public class exo2_MMAU {
                 compteur = compteur++;
             }
         }
-        System.out.println("La factorielle de " +valeurSaisie + " avec Tant que est : " + resultat);
+        System.out.println("La factorielle de " + valeurSaisie + " avec Tant que est : " + resultat);
     }
 }
 
 
 // Factorielle d'un entier valeurSaisie avec répéter
 
-public class exo2_MMAUb {
-    public void factorielle () {
+public class Exo2_MMAUb {
+    public int factorielle () {
 
         int valeurSaisie;
         int resultat = 1;
@@ -60,12 +61,12 @@ public class exo2_MMAUb {
 
 // Factorielle d'un entier valeurSaisie avec pour
 
-public class exo2_MMAUc {
-    public void factorielle () {
+public class Exo2_MMAUc {
+    public int factorielle () {
 
         int valeurSaisie;
         int resultat = 1;
-        int compteur;
+        int  compteur;
 
         Scanner in = new Scanner(System.in);
         System.out.println("Veuillez saisir votre valeur.");
@@ -76,7 +77,7 @@ public class exo2_MMAUc {
         if (valeurSaisie == 0 || valeurSaisie == 1) {
             System.out.println("La factorielle de " + valeurSaisie + "est : " + resultat);
         } else {
-            for (compteur > 1; compteur == valeurSaisie; compteur ++) {
+            for (compteur > 1; compteur == valeurSaisie; compteur ++) {  // "not a statement ??" c'est a dire
                 resultat = resultat * compteur;
                 compteur = compteur - 1;
             }

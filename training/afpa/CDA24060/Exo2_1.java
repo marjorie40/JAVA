@@ -5,22 +5,21 @@ import java.util.Scanner;
 
 import static java.lang.System.in;
 
-public class calculPrixTTC {
-
+public class CalculPrixTTC {
 
     // declaration de variable
+    public double calculPrixTTC () {
 
-    public void calculPrixTTC () {
-
-        double prixHT;
+        double prixHT; // quel type pour 2 chiffres après la virgule  ?
         double prixTTC;
 
         Scanner sc = new Scanner(in);
         System.out.println("Veuillez saisir le prix de l'objet hors taxe. ");
-        prixHT = in.nextDouble();
+        prixHT = in.nextDouble();  // IDE propose --sc.nextDouble ();-- pourquoi ?
 
         prixTTC = (prixHT * 1.196);
         System.out.println("Voici le prix HT : " + prixHT);
         System.out.println("Voici le prix TTC : " + prixTTC);
+        return prixTTC;
     }
 }

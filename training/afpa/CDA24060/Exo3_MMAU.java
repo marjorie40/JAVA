@@ -4,12 +4,14 @@ package training.afpa.CDA24060;
 
 import java.util.Scanner;
 
-public class exo3_MMAU {
-    public void equation () {
+public class Exo3_MMAU {
+     public void equation () {
 
         int a , b, c ;
         float delta ;
         float resultat ;
+        double x1;
+        double x2;
 
         Scanner in = new Scanner (System.in);
         System.out.println("Veuillez saisir la valeur de a : ");
@@ -25,13 +27,17 @@ public class exo3_MMAU {
             System.out.println("Il n'y a pas de solution pour cette équation") ;
         } else {
             if (delta==0) {
-                resultat = -b/(2*a); // qu'est ce que -floating-point context- ?
+                resultat = (float) -b /(2*a); // forcer float
                 System.out.println("Il y a une solution à la double équation : " + resultat);
             } else {
                 System.out.println("Il y a 2 solutions à cette équation : ");
-                System.out.println("-b + (racine delta / 2*a)");  // doit on créer une fonction racine ou est ce que -math.sqrt (delta)- est un terme adéquat ?
-                System.out.println("-b - (racine delta / 2*a)");
+                System.out.println("x1 = -b + (racine delta / 2*a)");  // doit on créer une fonction racine ou est ce que -math.sqrt (delta)- est un terme adéquat ?
+                System.out.println("x2 = -b - (racine delta / 2*a)");
+                x1 = - b + (Math.sqrt (delta)/2*a);
+                x2 = -b - (Math.sqrt (delta)/2*a);
+                System.out.println("x1 = " + x1 + "et  x2 = " + x2);
             }
+
         }
     }
 }

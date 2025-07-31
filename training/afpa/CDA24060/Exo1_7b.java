@@ -1,6 +1,6 @@
 package training.afpa.CDA24060;
 
-public class exo1.7b {
+public class Exo1.7b {
 
 
     // Declaration de variables
