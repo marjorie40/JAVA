@@ -10,7 +10,7 @@ public class Exo6_MMAU {
     int tabEnt2[] = new int[2];
     int valeurSaisie;
     int resultat;
-    int i; // indice des tableaux
+    int i ; // indice des tableaux
 
     public int tab_factorielle() {
 
@@ -19,7 +19,7 @@ public class Exo6_MMAU {
             tabEnt[i] = 1;
             tabEnt2[i] = 1;
         } else {
-            if ( i >= 1; i < tabEnt.length - 1; i++) {
+            if ( i > = (1); i < tabEnt.length - 1, i++) { // pourquoi IDE demande , ou ; ? Quelle est la règle  ?
 
                 resultat = tabEnt[i] * tabEnt2[i - 1];
             }
@@ -46,8 +46,7 @@ public class Exo6_MMAU {
 
             tab_factorielle();  // comment indiquer faire tab_factoriel de i ? N'accepte pas de valeur dans les ().
             System.out.println("La factorielle de " + valeurSaisie + "est : " + resultat);
-        }
-        return int resultat;
+
     }
 }
     /*for (i =1 ; i < tabEnt.length ; i++) {

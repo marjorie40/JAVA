@@ -5,6 +5,7 @@ package training.afpa.CDA24060;
 import java.util.Scanner;
 
 public class Exo3_MMAU {
+
      public void equation () {
 
         int a , b, c ;

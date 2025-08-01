@@ -1,5 +1,6 @@
 import training.afpa.CDA24060.Exo3_MMAU;
 import training.afpa.CDA24060.Exo4_MMAU;
+import training.afpa.CDA24060.Exo8_MMAU;
 
 public class App {
 
@@ -16,8 +17,11 @@ public class App {
     {
         double resultat;
 
+       /* Exo8_MMAU Exo8_MMAU = new Exo8_MMAU();
+        Exo8_MMAU.calculMoyenne();
+
         Exo3_MMAU exo3_MMAU = new Exo3_MMAU();
-        exo3_MMAU.equation();
+        exo3_MMAU.equation();*/
 
         Exo4_MMAU exo4_MMAU = new Exo4_MMAU();
         resultat= exo4_MMAU.calculPuissance(2,3);
