@@ -22,7 +22,7 @@ public class Exo7_MMAU {
 
         top = tab[0];
 
-        for (i = 0; i < TAILLE-1; i++) {
+        for (i = 0; i < TAILLE; i++) {
             if (tab[i] > top) {
                 top = tab[i];
                 System.out.println("La valeur maximale est : " + top);
@@ -33,11 +33,11 @@ public class Exo7_MMAU {
 
     // Début
 
-    tab [] = new int [TAILLE+1] ;
+    tab [] = new int [TAILLE] ;
 
-    for (i = 0; i < TAILLE-1 ; i++) {
+    for (i = 0; i < TAILLE ; i++) {
 
-        tab[i] = (double) Math.random (0,100);
+        tab[i] = (double) (Math.random ()*101);
     }
 }
 
