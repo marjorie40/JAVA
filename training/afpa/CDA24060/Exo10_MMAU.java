@@ -36,7 +36,7 @@ public class Exo10_MMAU {
         }
 
         for (i = 1 ; i < lenght; i++) { // n'accepte pas i > 0;
-            for (j = 1 ; j < lenght; j++) { // ne va pas prendre la longue en ordonnée ?
+            for (j = 1 ; j < lenght; j++) { // ne va pas prendre la longueur en ordonnée ?
                 resultat = tabMultiplication[i][j] = i * j;
             }
             return (resultat);
