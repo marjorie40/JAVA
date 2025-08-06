@@ -1,4 +1,4 @@
-package training.afpa.CDA24060;
+package training.afpa.CDA24060.algo;
 
 import java.util.Scanner;
 
@@ -12,14 +12,14 @@ public class Exo6_MMAU {
     int resultat;
     int i ; // indice des tableaux
 
-    public int tab_factorielle() {
+    public void tab_factorielle() {
 
         if (i == 0) {
 
             tabEnt[i] = 1;
             tabEnt2[i] = 1;
         } else {
-            if ( i > = (1); i < tabEnt.length - 1, i++) { // pourquoi IDE demande , ou ; ? Quelle est la règle  ?
+            for(int i=0; i < tabEnt.length - 1; i++) { // pourquoi IDE demande , ou ; ? Quelle est la règle  ?
 
                 resultat = tabEnt[i] * tabEnt2[i - 1];
             }

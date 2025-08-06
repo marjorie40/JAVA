@@ -1,8 +1,6 @@
-package training.afpa.CDA24060;
+package training.afpa.CDA24060.algo;
 
 import java.util.Scanner;
-
-import static java.lang.Math.random;
 
 /* !!!! A REVOIR !!!! */
 
@@ -16,7 +14,7 @@ public class Exo7_MMAU {
     public int tab_top() {  // static, void , 0 , ...?? quel mot clé pour quelle signification ?
 
         int top; // le maximum
-        int tab[];
+        int tab[] = new int[TAILLE];
 
         /*fonction lire la valeur top du tableau*/
 
@@ -31,27 +29,27 @@ public class Exo7_MMAU {
         return top;
     }
 
-    // Début
+    public void tester() {
+        // Début
 
-    tab [] = new int [TAILLE] ;
+        int[] tab =new int[TAILLE];
 
-    for (i = 0; i < TAILLE ; i++) {
+        for (i = 0; i < TAILLE; i++) {
 
-        tab[i] = (double) (Math.random ()*101);
-    }
-}
+            tab[i] = (int) (Math.random() * 101);
+        }
 
 
         // affichage du tableau
         Scanner sc = new Scanner(System.in); // adapté ?
         System.out.println("Voici les 10 valeurs sur tableau." + tab[i++]);
-        tab [i] = nextInt ();
+        tab[i] = sc.nextInt();
 
 
         // executer la fonction pour trouver le maximum du tableau
 
-    int top = tab_top; // comment appeler la fonction ?
+        int top = tab_top(); // comment appeler la fonction ?
 
-    System.out.println("La valeur maximum du tableau est : " + top);
-
+        System.out.println("La valeur maximum du tableau est : " + top);
+    }
 }

@@ -11,8 +11,9 @@ public class Compte {
     double montantRetrait;
 
     //2. Création constructeur avec parametre solde (pSolde)
-    public Compte (double solde){
-        this.solde = solde;
+    public Compte (double pSolde){
+
+        this.solde = pSolde;
     }
 
     // 3. Création méthode (=action) deposer()
@@ -22,32 +23,37 @@ public class Compte {
         System.out.println("Quel est le montant versé ? ");
         montantVerse = scanner.nextDouble();
 
-        solde = solde + montantVerse;
+        solde += montantVerse;
     }
 
     // 4. Creation méthode retrait ()
 
-    public void retrait () {
-        System.out.println("Quel est le montant du retrait ? ");
+    public void retirer () {
+        System.out.println("Quel est le montant retiré ? ");
         montantRetrait = scanner.nextDouble();
-
-        solde = solde - montantRetrait;
+        if (montantRetrait>=solde){
+            System.out.println("Votre solde est insuffisant, veuillez contacter votre conseiller pour effectuer un retrait.");
+        } else {
+            solde -= montantRetrait;
+        }
     }
 
     public String transaction() {
 
         System.out.println("Souhaitez-vous effectuer un versement ou un retrait ? "); // idealement interface graphique 2 boutons et échappe
-        transaction = scanner.nextLine(String.format("")); // s'attendre a une réponse de type String : est ce correct ?
+        transaction = scanner.nextLine(); // s'attendre a une réponse de type String : est ce correct ?
 
         if (transaction == "versement") {
             deposer();
         } else {
             if (transaction == "retrait") {
-                retrait();
+                retirer();
             }
         }
     return transaction;
     }
+
+
     public void afficher() {
 
         System.out.println("Le nouveau solde est de  : " + solde);

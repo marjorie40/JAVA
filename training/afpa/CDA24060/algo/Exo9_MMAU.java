@@ -1,4 +1,4 @@
-package training.afpa.CDA24060;
+package training.afpa.CDA24060.algo;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -7,33 +7,37 @@ public class Exo9_MMAU {
 
     // Saisir la taille maxi du tableau de valeurs entières positives, negatives et nulles
 
-    public double calculAnalyseTableau() {
+    public void calculAnalyseTableau() {
 
         int saisieTaille = 0;
         int TAILLE_MAX = saisieTaille;
-        int tabEntier[];
+        int tabEntier[] = new int[TAILLE_MAX];
         int i; // indice
+        double calculMoyenneN = 0;
+        double calculMoyenneP = 0;
+        double resultatP = 0;
+
 
         // veuillez insérer le nombre de valeur souhaité
 
         Scanner in = new Scanner(System.in);
         System.out.print("Veuillez entrer la taille du tableau souhaité: ");
-        saisieTaille = Scanner.nextInt();  // pourquoi pas valide ? Retour de la saisie taille de tableau par le User
+        saisieTaille = in.nextInt();  // pourquoi pas valide ? Retour de la saisie taille de tableau par le User
 
 
         // générer un tableau
+        i = 0;
+        do {
 
-        for (i = 0;  i++) {
-
-            Scanner in = new Scanner(System.in);
+            //Scanner in = new Scanner(System.in);
             System.out.print("Veuillez entrer une valeur (positive, négative ou nulle : ");
-            tabEntier [i] = Scanner.nextInt();
-
-        } while (i = TAILLE_MAX );
+            tabEntier[i] = in.nextInt();
+            i ++;
+        } while (i <= TAILLE_MAX );
 
         System.out.print("Voici les valeurs saisies. "); // affichage en ligne, correct ?
 
-            /* tabEntier[TAILLE_MAX] = Math.random(-5000, 5000);*/
+        /* tabEntier[TAILLE_MAX] = Math.random(-5000, 5000);*/
 
 
         // trier tableau
@@ -87,9 +91,7 @@ public class Exo9_MMAU {
         }
 
         // Faire la moyenne des valeurs positives
-        double calculMoyenneP;
-        calculMoyenneP = 0;
-        double resultatP = 0; // somme des valeurs positives
+       // somme des valeurs positives
 
         for (i = 0; i < TAILLE_MAX - 1; i++) {
             if (tabEntier[i] > 0) ;{
@@ -99,44 +101,37 @@ public class Exo9_MMAU {
 
             System.out.println("Voici la moyenne des valeurs positives dans ce tableau : " + calculMoyenneP);
         }
-        return calculMoyenneP;
 
         // Faire la moyenne des valeurs negatives
 
-        double calculMoyenneN;
-        calculMoyenneN = 0;
-        double resultatN = 0; // somme des valeurs negatives
+        // somme des valeurs negatives
+
 
         for (i = 0; i < TAILLE_MAX - 1; i++) {
-            if (tabEntier[i] > 0) ;{
+            if (tabEntier[i] > 0) ;
+            double resultatN = 0;
+            {
                 resultatN = resultatN + i ;
             }
-            calculMoyenneP = resultatN / nbEntierN ;
+            calculMoyenneN = resultatN / nbEntierN ;
 
             System.out.println("Voici la moyenne des valeurs positives dans ce tableau : " + calculMoyenneN);
         }
-        return calculMoyenneN;
     }
 
 }
 
 
-
-
-
-        /*Scanner in = new Scanner (System.in); // lit les valeurs tableau ?
+/*
+        Scanner in = new Scanner (System.in); // lit les valeurs tableau ?
         System.out.println("Veuillez saisir la valeur de a : " + tabEntier[i++] );
         tabEntier[i++]= in.nextInt();
 
         System.out.println("Tableau avec un foreach:"); // qu'est ce que ça execute ?
         for (int i : tabEntier) {
             System.out.println("Element : " + i);
-        */
-/*
-
 
         }
-
 
         calcul nbNul;
         afficher nbNul;
@@ -151,7 +146,6 @@ public class Exo9_MMAU {
         calcul moyenneN;
         afficher nbEntierN;
         afficher moyenneN;
-
-
     }
 }
+*/

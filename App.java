@@ -1,7 +1,4 @@
-import training.afpa.CDA24060.Exo10_MMAU;
-import training.afpa.CDA24060.Exo3_MMAU;
-import training.afpa.CDA24060.Exo4_MMAU;
-import training.afpa.CDA24060.Exo8_MMAU;
+import training.afpa.CDA24060.algo.Exo10_MMAU;
 
 public class App {
 
@@ -25,8 +22,7 @@ public class App {
         exo3_MMAU.equation();*/
 
         Exo10_MMAU exo10_MMAU = new Exo10_MMAU();
-        resultat= exo10_MMAU.tabMultiplication();
-        System.out.println ("Le resultat est : " + resultat);
+        exo10_MMAU.tabMultiplication();
 
         /*Exo4_MMAU exo4_MMAU = new Exo4_MMAU();
         resultat= exo4_MMAU.calculPuissance(2,3);

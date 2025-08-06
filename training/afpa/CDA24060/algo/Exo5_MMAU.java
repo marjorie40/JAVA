@@ -1,4 +1,4 @@
-package training.afpa.CDA24060;
+package training.afpa.CDA24060.algo;
 
 //recherche dichotomique : vérifier la présence ou l'absence d'un entier dans un tableau trié
 
@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class Exo5_MMAU {
 
 
-    int[] tabEntier =  ;
+    int[] tabEntier;
     int indiceBas ;
     int indiceHaut;
     int indiceMilieu;
@@ -20,11 +20,12 @@ public class Exo5_MMAU {
     /* Création de la fonction recherche dichotomique*/
     public boolean rechercheDicho () {
 
-        int tabEntier = new int [];  // redondance, doit on affecter forcément des la déclaration ?
+        int lenght=10;
+        int[] tabEntier = new int[10];  // redondance, doit on affecter forcément des la déclaration ?
         int indiceBas = 1;
-        int indiceHaut = tabEntier.lenght - 1;
+        int indiceHaut = tabEntier.length - 1;
         int indiceMilieu = (indiceBas + indiceHaut) / 2;
-        int y;
+        int y=0;
         boolean trouve = false;
 
 
@@ -42,17 +43,18 @@ public class Exo5_MMAU {
                 }
                 if (trouve = true) {
 
-                    return resultat = indiceMilieu;
+                    //return resultat = indiceMilieu;
                 } else {
-                    return resultat = -1;
+                   // return resultat = -1;
                 }
             }
+            return trouve;
         }
-        int[] index = { -2,-1,0,13,24,37,44,56,99,117 };
-
-        Scanner in = new Scanner (System.in);
-        System.out.println("Veuillez saisir la valeur de x : ");
-        int x = nextInt();
+//        int[] index = { -2,-1,0,13,24,37,44,56,99,117 };
+//
+//        Scanner in = new Scanner (System.in);
+//        System.out.println("Veuillez saisir la valeur de x : ");
+//        int x = nextInt();
 
 
 

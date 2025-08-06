@@ -1,26 +1,25 @@
-package training.afpa.CDA24060;
+package training.afpa.CDA24060.algo;
 
-import static javax.swing.JOptionPane.YES_NO_OPTION;
 import java.util.Scanner;
 
 public class Exo11_MMAU {
     /* public double calculatrice() {
 
-         char operation;
-         float valeurX;
-         float valeurY;
-         double resultat;
+        char operation;
+        float valeurX;
+        float valeurY;
+        double resultat;
 
          // choix de l'operation
 
-         Scanner operation = new char(System.in);
-         System.out.println("Veuillez choisir une opération a effectuer. Tapez \+ pour une addition. Tapez \- pour une soustraction." +
-                 " Tapez \* pour une multiplication. Tapez \/ pour une division. ");
-         operation= operation;
-         /* JOptionPane.showMessageDialog(null, "Veuillez choisir une opération a effectuer. Tapez \+ pour une addition. Tapez \- pour une soustraction." +
-         " Tapez \* pour unemultiplication. Tapez \/ pour une division.");
+        Scanner operation = new char(System.in);
+        System.out.println("Veuillez choisir une opération a effectuer. Tapez \+ pour une addition. Tapez \- pour une soustraction." +
+                " Tapez \* pour une multiplication. Tapez \/ pour une division. ");
+        operation= operation;
+        /* JOptionPane.showMessageDialog(null, "Veuillez choisir une opération a effectuer. Tapez \+ pour une addition. Tapez \- pour une soustraction." +
+        " Tapez \* pour unemultiplication. Tapez \/ pour une division.");
           */
-   /*  System.out.println ("Saisissez un nombre X");
+    /*  System.out.println ("Saisissez un nombre X");
         valeurX = operation.nextFloat();
         System.out.println ("Saisissez un nombre Y");
         valeurY = operation.nextFloat();
@@ -55,7 +54,7 @@ public class Exo11_MMAU {
     }
 }
 */
-    public double calculatrice() {
+    public void calculatrice() {
         char operation;
         float valeurX;
         float valeurY;
@@ -71,8 +70,8 @@ public class Exo11_MMAU {
         //Scanner operation = new char(System.in);
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Veuillez choisir une opération a effectuer. Tapez \+ pour une addition. Tapez \- pour une soustraction." +
-                " Tapez \* pour une multiplication. Tapez \/ pour une division. ");
+        System.out.println("Veuillez choisir une opération a effectuer. Tapez + pour une addition. Tapez - pour une soustraction." +
+                " Tapez * pour une multiplication. Tapez / pour une division. ");
 
         // je prends mon scanner créé et je lis la saisie que je met dans operation
 
@@ -124,6 +123,5 @@ public class Exo11_MMAU {
 
         }
         // -> ton retrun n'est pas nécessaire sauf si tu souhaite renvoyer le résultat
-        return resultat;
     }
 }

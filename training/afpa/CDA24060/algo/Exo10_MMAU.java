@@ -1,11 +1,11 @@
-package training.afpa.CDA24060;
+package training.afpa.CDA24060.algo;
 
 import java.util.Scanner;
 
 public class Exo10_MMAU {
 // TabMultiplication
 
-    public int tabMultiplication() {
+    public void tabMultiplication() {
 
 
         int resultat = 0; // initialisation du résultat
@@ -19,7 +19,7 @@ public class Exo10_MMAU {
 
         // Creation de tableau 10*10
         tabMultiplication = new int[10][10];
-        tabMultiplication[i][j] = {{0,1,2,3,4,5,6,7,8,9} ; {0,1,2,3,4,5,6,7,8,9}}
+        //tabMultiplication[i][j] = {{0,1,2,3,4,5,6,7,8,9} ; {0,1,2,3,4,5,6,7,8,9}}
 
         // Saisir 2 valeurs pour le calcul
         Scanner saisieValeurX = new Scanner (System.in);
@@ -31,7 +31,7 @@ public class Exo10_MMAU {
 
 
         // Boucle calcul
-        if (X=0 || Y=0) { //comment ecrire OU avec des int ?
+        if (X==0 || Y==0) { //comment ecrire OU avec des int ?
             resultat = 0;
         }
 
@@ -39,19 +39,18 @@ public class Exo10_MMAU {
             for (j = 1 ; j < lenght; j++) { // ne va pas prendre la longueur en ordonnée ?
                 resultat = tabMultiplication[i][j] = i * j;
             }
-            return (resultat);
-            System.out.println("Le résultat est : " +resultat);
+            System.out.println("Le résultat est : " + resultat);
         }
 
         System.out.println("Souhaitez-vous effectuer un nouveau calcul ? Tapez o pour Oui ou n pour Non.");
-        Scanner responseUser = new Scanner (System.in);
-        responseUser = responseUser.nextLine();  // IDE propose nextLine
+        Scanner sc = new Scanner (System.in);
+        responseUser = sc.nextLine().toLowerCase().charAt(0);  // IDE propose nextLine
 
-        if (responseUser.equals("n")) {
+        if (Character.isLetter('n')) {
             System.out.println("Merci et à bientôt ! ");
             System.exit (0);  // sortie propre ?
         } else {
-            if (responseUser.equals("o"));
+            if (Character.isLetter('o'));
             System.out.println("Let's Go ! ");
             tabMultiplication();
         }

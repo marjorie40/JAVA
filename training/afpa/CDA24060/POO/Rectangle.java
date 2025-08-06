@@ -12,32 +12,30 @@ public class Rectangle {
     double perimetre;
 
 
+
     //constructeur avec parametre
-    Rectangle(double longueur, double largeur) {
+    public Rectangle(double longueur, double largeur) {
         this.longueur = longueur;
         this.largeur = largeur;
     }
-    //Scanner scanner = new Scanner(in);
-    //System.out.println("Saisissez la longueur du rectangle. ");
-    //longueur = scanner.nextDouble();
-    //System.out.println("Saisissez la largeur du rectangle. ");
-    //largeur=scanner.nextDouble();
+
 
     // methode surface
-    double surface() {
+    public double surface() {
         return surface = longueur * largeur;
     }
 
     // methode perimetre
 
-    double perimetre() {
+    public double perimetre() {
         return perimetre = (longueur + largeur) * 2;
     }
 
     // methode affichage des resultats
-    System.out.println("La surface du rectangle est de :"+surface);
-    System.out.println("Le perimetre du resctange est de : "+perimetre);
-}
+    public void afficher() {
+        System.out.println("La surface du rectangle est de :" + surface);
+        System.out.println("Le perimetre du resctange est de : " + perimetre);
+    }
 
 
     /*public double getLongueur() {
@@ -55,3 +53,4 @@ public class Rectangle {
     }
 */
 
+}

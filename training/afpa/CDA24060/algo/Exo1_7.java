@@ -1,4 +1,4 @@
-package training.afpa.CDA24060;
+package training.afpa.CDA24060.algo;
 // switch value b in a; c in b; a in c ;
 public class Exo1_7 {
 
