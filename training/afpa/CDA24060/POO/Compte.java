@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Compte {
 
     String transaction;
-    double solde;
+    double solde = 1000;
     double montantVerse;
     double montantRetrait;
 
@@ -40,7 +40,7 @@ public class Compte {
 
     public String transaction() {
 
-        System.out.println("Souhaitez-vous effectuer un versement ou un retrait ? "); // idealement interface graphique 2 boutons et échappe
+        //System.out.println("Souhaitez-vous effectuer un versement ou un retrait ? ");
         transaction = scanner.nextLine(); // s'attendre a une réponse de type String : est ce correct ?
 
         if (transaction == "versement") {

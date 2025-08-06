@@ -5,7 +5,7 @@ import training.afpa.CDA24060.algo.Exo8_MMAU;
 
 import java.util.Scanner;
 
-public class Execution {  // comment pointer sur l'objet VoitureJava sans que ca recupere des methodes de classes comme Rectangle ?
+public class Execution {
     static void VoitureJava() {
         System.out.println();
     }
@@ -27,9 +27,9 @@ public class Execution {  // comment pointer sur l'objet VoitureJava sans que ca
 
         System.out.println(voiture.getMarque());
         // appel d'une fonction avec resultat
-        test = voiture.getMarque();
+        //test = voiture.getMarque();
         // appel d'une procédure sans résultat
-        voiture.setMarque("test");
+        //voiture.setMarque("test");
 
         // rendu à l'utilisateur
         voiture.afficher();
