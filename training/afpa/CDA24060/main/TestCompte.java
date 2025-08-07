@@ -22,8 +22,6 @@ public class TestCompte {
             compte.start ();
 
 
-
-
         }
 
         public void start ()
@@ -38,20 +36,22 @@ public class TestCompte {
             compte = new Compte(solde);
             System.out.println("Solde du compte est " +solde);
             System.out.println("Souhaitez-vous effectuer un versement ou un retrait ? ");
-            transaction = scanner.nextLine();
-            compte.transaction();
+            //transaction = scanner.nextLine();
+            compte.choixTransaction(); //probleme, ne bascule pas sur deposer ou retirer ... pas a pas : NE match PAS - retrait ou versement-
+            compte.deposer();  // deposer fonctionne
+            compte.retirer(); // retirer fonctionne
 
-            montantVerse = scanner.nextDouble();
+            //montantVerse = scanner.nextDouble();
 
-            compte.transaction();
-            solde = scanner.nextDouble();
-            montantVerse = scanner.nextDouble();
-            montantRetrait = scanner.nextDouble();
+            //compte.choixTransaction();
+            //solde = scanner.nextDouble();
+            //montantVerse = scanner.nextDouble();
+            //montantRetrait = scanner.nextDouble();
 
             // resultat pour le client
 
-            compte.afficher();
+            compte.afficher(); // afficher fonctionne
 
-            System.out.println("Solde du compte est " +solde);
+            //System.out.println("Solde du compte est " +solde);
         }
 }

@@ -24,6 +24,7 @@ public class Compte {
         montantVerse = scanner.nextDouble();
 
         solde += montantVerse;
+        System.out.println("Votre nouveau solde est de : " +solde);
     }
 
     // 4. Creation méthode retrait ()
@@ -36,12 +37,14 @@ public class Compte {
         } else {
             solde -= montantRetrait;
         }
+        System.out.println("Votre solde = " + solde);
     }
 
-    public String transaction() {
+    public String choixTransaction() {
 
         //System.out.println("Souhaitez-vous effectuer un versement ou un retrait ? ");
-        transaction = scanner.nextLine(); // s'attendre a une réponse de type String : est ce correct ?
+        transaction = scanner.nextLine();
+        System.out.println ("Vous avez décider de faire un " + transaction);
 
         if (transaction == "versement") {
             deposer();
@@ -57,6 +60,7 @@ public class Compte {
     public void afficher() {
 
         System.out.println("Le nouveau solde est de  : " + solde);
+        System.out.println("Merci et à bientôt !");
     }
 }
 

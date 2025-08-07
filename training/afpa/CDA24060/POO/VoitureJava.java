@@ -31,7 +31,7 @@ public class VoitureJava {
     public void afficher() {
         //VoitureJava voiture = new VoitureJava(getMarque(this.marque),getPrix(this.prix));
 
-        System.out.println("La marque de la voiture Java est  : " + this.getMarque() + "." +
-                " Le prix de cette voiture Java est de : " + this.getPrix() );
+        System.out.println("La marque de la voiture est  : " + this.getMarque() + "." +
+                " Le prix de cette voiture est de : " + this.getPrix() );
     }
 }

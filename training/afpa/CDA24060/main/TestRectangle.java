@@ -8,9 +8,11 @@ public class TestRectangle {
     public static void main(String[] args) {
 
         double perimetre;
+        double surface;
 
-        Rectangle testrectangle = new Rectangle(11, 112);
+        Rectangle testrectangle = new Rectangle(11, 20);
         perimetre = testrectangle.perimetre();
+        surface = testrectangle.surface();
 
         testrectangle.afficher();
     }
