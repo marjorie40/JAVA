@@ -1,46 +1,33 @@
 package training.afpa.CDA24060.POO;
 
 public class Personne {
-    private String nom;
-    private String adresse;
+    protected String nom;  //protected est ce OK : pour que Etudiant et Equipe accès a ces attributs communs
+    protected String adresse;
 
-    public Personne(String nom, String adresse) { // n'accepte pas setNom et setAdresse (already define in Personne)
-        this.nom = setNom;
-        this.adresse = setAdresse;
 
+    public Personne () { // n'accepte pas setNom et setAdresse (already define in Personne)
+        this.setNom (nom);
+        this.setAdresse (adresse);
+    }
+    public Personne (String setNom,  String setAdresse) {
     }
 
-    public String getNom(){
+    public String getNom() {
         return nom;
     }
     public void setNom(String nom) {
         this.nom = nom;
     }
-    private String getAdresse() {
+    public String getAdresse() {
         return adresse;
     }
     public void setAdresse(String adresse) {
         this.adresse = adresse;
     }
-
-
-
-    public Personne (String setNom,  String setAdresse) {
-        this.nom = getNom();
-        this.adresse = getAdresse();
+    public String afficherNom() {
+        return this.getNom();
     }
-    public String getNom () {
-        return nom;
-    }
-
-    public String getAdresse() {
-        return adresse;
-    }
-
-
-        // constructeur
-        Personne personne = new Personne("Jocelyne", "rue de la joie");
-
-
+    public String afficherAdresse() {
+        return this.getAdresse();
     }
 }
