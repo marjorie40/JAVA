@@ -24,6 +24,12 @@ public class Personnages {
 
     }
 
+    @Override
+    public String toString() {
+        return "!!"+this.getNom() +" "+ this.getRace()+" "+ this.getClasse()+" "+ this.getGroupe()+" "+ this.getPointsDeVie()+" !!";
+        //return this.getPersonnages().toString();
+    }
+
     public int getPointsDeVie() {
         return pointsDeVie;
     }
@@ -55,10 +61,11 @@ public class Personnages {
     public void setGroupe(String groupe) {
         this.groupe = groupe;
     }
+
     List<Personnages> getPersonnages() {
         List<Personnages> personnages = new ArrayList<>();
         // personnages.add(this); pourquoi ??
-        personnages.add();
+
         return personnages;
     }
 

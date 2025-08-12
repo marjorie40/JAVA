@@ -7,14 +7,9 @@ public class App {
     public static void main(String[] args) {
         System.out.println(" Hello World ! ");
 
-        App app = new App();
-        app.start ();
+
+
+        Personnages personnages = new Personnages ("Java", "HUMAIN", "leger", "1", 100);
+        System.out.println(personnages.toString());
     }
-
-    public void start ()
-    {
-
-
-    }
-    Voleurs voleurs = new Voleurs();  //ne cohincide poas avec le constructeur dans la class Voleurs...
 }

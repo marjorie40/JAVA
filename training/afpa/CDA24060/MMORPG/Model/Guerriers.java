@@ -5,11 +5,13 @@ import java.util.*;
 
 public class Guerriers extends Personnages {
 
-    int force = 100;
-    public Guerriers(String nom, String race, String classe, String groupe, int pointsDeVie, int force) {
+    private int force;
+    public Guerriers(String nom, String race, String classe, String groupe, int pointsDeVie, int setForce) {
         super(nom, race, classe, groupe, pointsDeVie);
-        this.force = force;
+        this.setForce (setForce);
+
     }
+
     private static List<String> guerriers = new ArrayList<String>() {
         public void add(int index, Guerriers element) {
             guerriers.add("Gontran");
@@ -19,6 +21,15 @@ public class Guerriers extends Personnages {
         }
 
     };
+
+    public int getForce () {
+        return force;
+    }
+    public void setForce (int force) {
+        this.force = force;
+    }
+
+
         /*@Override
         public int size() {
             return 0;
